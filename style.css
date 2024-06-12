@@ -428,3 +428,64 @@ footer {
     text-align: center;
   }
   
+
+
+  /* Slider */
+  .main{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 80vw;
+    margin: 50px auto;
+  }
+  .slide{
+    height: 60vh;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    background-size: cover;
+    background-position: 50%;
+    flex: 0.5;
+    cursor: pointer;
+    transition: 0.5s linear flex;
+    -webkit-transition: 0.5s linear flex;
+    -moz-transition: 0.5s linear flex;
+    -ms-transition: 0.5s linear flex;
+    -o-transition: 0.5s linear flex;
+  }
+  @keyframes heading {
+    from{
+      bottom: 150px;
+      opacity: 0;
+    }
+    to{
+      bottom: 20px;
+      opacity: 1;
+    }
+  
+  }
+  .slide h2{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    color: #fff;
+  }
+  .slide h2 span{
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+  .slide.active{
+    flex: 5;
+  }
+  .slide.active h2{
+    opacity: 1;
+    animation-name: heading;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
