@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- PIXI.JS --> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/browser/pixi.min.js"></script> <!-- AXIOS --> <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#playPauseBtn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#playPauseBtn:hover {
+    background-color: #0056b3;
+}
+
+#songName {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+#pixi-canvas {
+    width: 80%;
+    height: 200px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+    </style>
+
+    </head>
+<body>
+
+    
+
+    <div id="player">
+        <button id="playPauseBtn">Pause</button>
+        <p id="songName">Listen to my CV and my contact information</p>
+    </div>
+    <canvas id="pixi-canvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/browser/pixi.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
